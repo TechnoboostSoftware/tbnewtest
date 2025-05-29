@@ -120,9 +120,12 @@ class TechnoBoostFixNav extends HTMLElement {
       currentLocation === "index.html#client-success";
     const clientSuccess =
       currentLocation === "transforming-pharma.html" ||
-      currentLocation === "transforming-jewelry.html";
+      currentLocation === "transforming-pharma-new.html" ||
+      currentLocation === "transforming-jewelry.html" ||
+      currentLocation === "transforming-jewelry-new.html";
     const services =
       currentLocation === "ux-design.html" ||
+      currentLocation === "ux-design-new.html" ||
       currentLocation === "software-product.html" ||
       currentLocation === "smartsheet-solutions.html" ||
       currentLocation === "data-analytics.html" ||

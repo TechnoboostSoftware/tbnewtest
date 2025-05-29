@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -33,7 +33,7 @@ html {
   color: white;
 }
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Host Grotesk", sans-serif;
 }
 .custom-radius {
   border-radius: 50px;
@@ -213,3 +213,26 @@ html {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 } */
+
+/* NEW CSS FOR FONT SIZE */
+.hero-subtitel {
+  font-size: clamp(0.75rem, 0.2308rem + 2.3077vw, 3rem);
+}
+.hero-para {
+  font-size: clamp(0.5rem, 0.2548rem + 1.0897vw, 1.5625rem);
+}
+.hero-titel {
+  font-size: clamp(1.125rem, -0.0577rem + 5.2564vw, 6.25rem);
+}
+.text-para {
+  font-size: clamp(1rem, 0.7981rem + 0.8974vw, 1.875rem);
+}
+.text-titel {
+  font-size: clamp(1.25rem, 0.8894rem + 1.6026vw, 2.8125rem);
+}
+.text-subtitel {
+  font-size: clamp(1rem, 0.9423rem + 0.2564vw, 1.25rem);
+}
+.text-card {
+  font-size: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem);
+}
