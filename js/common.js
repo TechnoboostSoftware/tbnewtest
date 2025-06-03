@@ -128,7 +128,8 @@ class TechnoBoostFixNav extends HTMLElement {
       currentLocation === "ux-design-new.html" ||
       currentLocation === "software-product.html" ||
       currentLocation === "smartsheet-solutions.html" ||
-      currentLocation === "data-analytics.html" ||
+      currentLocation === "data-analytics-new.html" ||
+      currentLocation === "ai-automation-new.html" ||
       currentLocation === "ai-automation.html";
     if (home) {
       $nav.find("#home").addClass("bg-[#05070F] text-white");
@@ -195,7 +196,7 @@ class FeatureWork extends HTMLElement {
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
             <!-- Card 1 -->
-            <a class="flex flex-col gap-3" href="transforming-pharma.html" ;>
+            <a class="flex flex-col gap-3" href="transforming-pharma-new.html" ;>
               <div class="flip-box rounded-2xl overflow-hidden">
                 <div class="flip-box-inner">
                   <!-- Front -->
@@ -267,7 +268,7 @@ class FeatureWork extends HTMLElement {
             </a>
 
             <!-- Card 2 (Duplicate with different content) -->
-            <a class="flex flex-col gap-3" href="transforming-jewelry.html" ;>
+            <a class="flex flex-col gap-3" href="transforming-jewelry-new.html" ;>
               <div class="flip-box rounded-2xl overflow-hidden">
                 <div class="flip-box-inner">
                   <!-- Front -->
@@ -349,77 +350,90 @@ class TechnoboostFooter extends HTMLElement {
   constructor() {
     super();
 
-    this.innerHTML = ` <div class="md:flex flex-col gap-10 mx-10 lg:mx-auto mt-10 hidden">
-        <!-- Top  -->
-        <div class="flex flex-col md:flex-row lg:gap-28 gap-8 items-center">
-          <!-- Left -->
-          <div class="lg:max-w-2xl max-w-lg">
-            <p class="text-xl md:text-2xl leading-snug">
-              We’re <span class="text-[#31F7C8]"><a href="index.html">Technoboost</a></span>. A group of
-              dedicated individuals collaborating on amazing initiatives and
-              fostering lasting relationships that go far beyond just the final
-              product.
-            </p>
-          </div>
-
-          <!-- Right -->
-          <div class="flex flex-col gap-10 text-base text-xl">
-            <div class="flex flex-col gap-2 hidden">
-              <a href="#">Instagram</a>
-              <a href="#">Facebook</a>
-              <a href="#">LinkedIn</a>
-            </div>
-            <div class="flex flex-col gap-2 text-lg">
-              <a href="index.html#client-success">Client Success</a>
-              <a href="index.html#our-service">Services</a>
-              <a href="terms-condition.html">Terms & Conditions</a>
-              <a href="privacy-policy.html">Privacy Policy</a>
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Section -->
-        <div class="flex flex-col md:flex-row gap-28 items-baseline">
-          <h3 class="text-xl md:text-2xl max-w-2xl leading-snug">
-            Want to collaborate with a super down-to-earth, mad-talented team?
-            Hit us up!
-          </h3>
-
-          <!-- Address -->
-          <h4 class="text-base text-gray-300 max-w-xs">
-            Technoboost Services<br />
-            24, 2nd Floor, Shree Durga Arcade<br />
-            1st Cross Rd, Kasavanahalli.
-          </h4>
-        </div>
-        <!-- CONNECT BUTTON -->
-        <a href="contact-us.html"
-          class="flex items-center justify-between group bg-[#F6FA5E] text-black rounded-4xl px-8 py-6 md:py-8 mx-4 md:mx-0"
+    this.innerHTML = `  <div class="w-full flex justify-center">
+        <div
+          class="flex-col gap-10 mt-10 lg:mx-auto hidden md:flex max-w-7xl px-4 md:px-10"
         >
-          <div class="flex flex-col justify-center">
-            <h4 class="text-3xl md:text-[50px]">Let's Connect</h4>
-            <p class="font-light md:text-2xl mt-2 text-sm">
-              Let's have a quick chat about project
-            </p>
-          </div>
-          <div>
-            <div>
-              <img
-                src="images/arrow.svg"
-                class="w-12 md:w-32 group-hover:scale-125 cursor-pointer transition-all"
-                alt=""
-              />
+          <div class="grid grid-cols-3 items-start gap-28">
+            <div class="col-span-2">
+              <p class="text-xl md:text-2xl leading-snug">
+                We’re
+                <span class="text-[#31F7C8]">
+                  <a href="index.html">Technoboost</a> </span
+                >. A group of dedicated individuals collaborating on amazing
+                initiatives and fostering lasting relationships that go far
+                beyond just the final product.
+              </p>
+            </div>
+
+            <!-- Right  -->
+            <div class="flex gap-10 text-base">
+              <div class="flex flex-col gap-2 hidden">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+              </div>
+
+              <div class="flex flex-col gap-2 text-lg">
+                <a href="index.html#client-success">Client Success</a>
+                <a href="index.html#our-service">Services</a>
+                <a href="terms-condition.html">Terms & Conditions</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </div>
             </div>
           </div>
-        </a>
-        <div class="flex gap-2 items-center hidden">
-          <img src="images/web-white.svg" alt="" />
-          <p>Online</p>
-          <span class="bg-[#31F7C8] md:w-4 md:h-4 w-2 h-2 rounded-full"></span>
-        </div>
-        <p class="text-xs">Copyright © 2025 Technoboost. All rights reserved.</p>
 
+          <!-- Bottom Section -->
+          <div class="grid grid-cols-3 gap-28 items-start">
+            <div class="col-span-2">
+              <h3 class="text-xl md:text-2xl leading-snug">
+                Want to collaborate with a super down-to-earth, mad-talented
+                team? Hit us up!
+              </h3>
+            </div>
+
+            <!-- Right-->
+            <div class="flex">
+              <p class="text-lg text-gray-300 max-w-xs">
+                Technoboost Services<br />
+                24, 2nd Floor, Shree Durga Arcade<br />
+                1st Cross Rd, Kasavanahalli.
+              </p>
+            </div>
+          </div>
+
+          <!-- CONNECT BUTTON -->
+          <a
+            href="contact-us.html"
+            class="flex items-center justify-between group bg-[#F6FA5E] text-black rounded-4xl px-8 py-6 md:py-8 mx-4 md:mx-0"
+          >
+            <div class="flex flex-col justify-center">
+              <p class="text-3xl md:text-[50px]">Let's Connect</p>
+              <p class="font-light md:text-2xl mt-2 text-sm">
+                Let's have a quick chat about project
+              </p>
+            </div>
+            <div>
+              <div>
+                <img
+                  src="images/arrow.svg"
+                  class="w-12 md:w-32 group-hover:scale-125 cursor-pointer transition-all"
+                  alt=""
+                />
+              </div>
+            </div>
+          </a>
+          <div class="flex gap-2 items-center hidden">
+            <img src="images/web-white.svg" alt="" />
+            <p>Online</p>
+            <span
+              class="bg-[#31F7C8] md:w-4 md:h-4 w-2 h-2 rounded-full"
+            ></span>
+          </div>
+          <p class="text-xs">
+            Copyright © 2025 Technoboost. All rights reserved.
+          </p>
+        </div>
       </div>
       
     `;
