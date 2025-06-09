@@ -236,3 +236,12 @@ html {
 .text-card {
   font-size: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem);
 }
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: none;
+}
