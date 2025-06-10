@@ -120,16 +120,12 @@ class TechnoBoostFixNav extends HTMLElement {
       currentLocation === "index.html#client-success";
     const clientSuccess =
       currentLocation === "transforming-pharma.html" ||
-      currentLocation === "transforming-pharma-new.html" ||
-      currentLocation === "transforming-jewelry.html" ||
-      currentLocation === "transforming-jewelry-new.html";
+      currentLocation === "transforming-jewelry.html";
     const services =
       currentLocation === "ux-design.html" ||
-      currentLocation === "ux-design-new.html" ||
       currentLocation === "software-product.html" ||
       currentLocation === "smartsheet-solutions.html" ||
-      currentLocation === "data-analytics-new.html" ||
-      currentLocation === "ai-automation-new.html" ||
+      currentLocation === "data-analytics.html" ||
       currentLocation === "ai-automation.html";
     if (home) {
       $nav.find("#home").addClass("bg-[#05070F] text-white");

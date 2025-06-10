@@ -7,6 +7,7 @@
       name="description"
       content="Technoboost specializes in AI and automation engineering to help businesses streamline operations, reduce manual work, and build intelligent digital systems."
     />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -19,7 +20,7 @@
     <link href="images/favicon.svg" rel="icon" />
   </head>
   <body class="bg-custom">
-    <div class="bg-primary md:rounded-b-[70px] rounded-2xl md:pb-6 pb-10">
+    <div class="bg-primary md:pb-20 pb-10 md:rounded-b-[66px] rounded-b-2xl">
       <div class="bg-primary">
         <header
           class="flex justify-between items-center mx-4 md:mx-10 relative"
@@ -36,29 +37,36 @@
           </div>
         </header>
         <lets-connect></lets-connect>
-        <nav class="mx-4 md:mx-12 md:flex gap-5 hidden">
-          <!-- <a href="index.html">HOME</a> -->
-          <a href="index.html#our-service" class="text-header">Services</a>
-        </nav>
-        <!-- HERO SECTION -->
-        <div class="md:mt-5 mt-0 md:mx-12 mx-4 pb-10">
-          <h1 class="text-4xl md:text-[50px]">AI & Automation Engineering</h1>
-          <h2
-            class="md:text-[25px] text-2xl md:mt-0 mt-2 max-w-5xl md:text-justify"
-          >
-            Build. Enhance. Invent.
-          </h2>
+      </div>
+      <!-- HERO SECTION -->
+      <div class="px-4 relative">
+        <div class="relative w-full">
+          <img src="images/ai & augtomation hero.png" class="w-full" alt="" />
+          <div
+            class="absolute inset-0 bg-black opacity-50 md:rounded-[20px] rounded-[6px]"
+          ></div>
+        </div>
+
+        <div
+          class="absolute top-12 left-6 md:top-44 md:left-12 text-white z-10"
+        >
+          <p class="mb-3 text-card font-light">Services</p>
+          <h1 class="leading-tight hero-titel">AI & Automation Engineering</h1>
+          <h2 class="hero-subtitel font-light">Build. Enhance. Invent.</h2>
         </div>
       </div>
-      <!-- FIXED NAV -->
-      <techno-boost-fixed-nav></techno-boost-fixed-nav>
-      <div class="bg-custom md:rounded-[50px] rounded-2xl text-white w-full">
-        <div class="py-8">
-          <div class="md:mx-20 mx-4 mt-10">
-            <h3 class="md:text-[50px] text-5xl">What We Do?</h3>
-            <p
-              class="md:text-[25px] mt-10 text-2xl md:text-justify tracking-tighter md:tracking-normal"
-            >
+
+      <!-- What possible with Technoboost -->
+      <div class="mx-4 md:mt-16 mt-5">
+        <div
+          class="bg-white md:px-8 px-4 py-2 md:py-8 md:rounded-3xl rounded-lg"
+        >
+          <div>
+            <h4 class="text-titel text-center mb-1">
+              What’s possible with
+              <span class="text-[#2DCBC5]">Technoboost</span>?
+            </h4>
+            <p class="text-center max-w-5xl mx-auto">
               In an era defined by rapid technological advancement,
               organizations must leverage Artificial Intelligence (AI) and
               automation to remain competitive and drive operational excellence.
@@ -67,99 +75,95 @@
               (LLMs), designed to optimize processes, enhance decision-making,
               and unlock new opportunities.
             </p>
-          </div>
-          <div class="mt-10 mb-10 flex flex-col md:gap-0 gap-6">
-            <div>
-              <div
-                onclick="toggleSection(this)"
-                class="cursor-pointer flex justify-between items-center md:mx-20 mx-4"
-              >
-                <h4 class="md:text-[25px] text-xl">
-                  Large Language Model (LLM) Solutions
-                </h4>
-                <img src="images/arrow-down.svg" class="md:w-12 w-10" alt="" />
-              </div>
-              <div
-                class="bg-white mx-4 py-6 md:mx-20 md:py-8 justify-center md:rounded-4xl rounded-xl body hidden"
-              >
-                <div
-                  class="text-black md:text-2xl md:px-8 px-4 text-lg leading-snug"
-                >
-                  <h4 class="mb-6 text-Slidegray">
-                    Innovate - Develop - Deliver
-                  </h4>
-                  <p>
-                    Our team harnesses the capabilities of LLMs to develop
-                    applications that understand and generate human-like text.
-                    This technology can power chatbots, enhance content
-                    creation, automate customer support, and facilitate
-                    multilingual communication.
-                  </p>
+            <div class="mt-10">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+                <div class="bg-[#F2F4F7] rounded-2xl p-5 group card shadow-xl">
+                  <img
+                    src="images/ux-1.png"
+                    class="w-12 group-hover:scale-125 transition-all"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h4 class="text-subtitel">
+                      Large Language Model (LLM) Solutions
+                    </h4>
+                    <p class="text-Slidegray text-card">
+                      Our team harnesses the capabilities of LLMs to develop
+                      applications that understand and generate human-like text.
+                      This technology can power chatbots, enhance content
+                      creation, automate customer support, and facilitate
+                      multilingual communication.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="md:mt-4">
-              <div
-                onclick="toggleSection(this)"
-                class="cursor-pointer flex justify-between items-center md:mx-20 mx-4"
-              >
-                <h4 class="md:text-[25px] text-xl">
-                  Natural Language Processing (NLP)
-                </h4>
-                <img src="images/arrow-down.svg" class="md:w-12 w-10" alt="" />
-              </div>
-              <div
-                class="bg-white mx-4 py-6 md:mx-20 md:py-8 justify-center md:rounded-4xl rounded-xl body hidden"
-              >
-                <div
-                  class="text-black md:text-2xl md:px-8 px-4 text-lg leading-snug"
-                >
-                  <h4 class="mb-6 text-Slidegray">
-                    Transform - Innovate - Thrive
-                  </h4>
-                  <p>
-                    By utilizing advanced NLP techniques powered by LLMs, we
-                    enhance customer interactions and streamline communication.
-                    From automated responses to sentiment analysis, our NLP
-                    solutions help you understand and engage with customers more
-                    effectively, delivering tailored experiences.
-                  </p>
+                <div class="bg-[#F2F4F7] rounded-2xl p-5 group card shadow-xl">
+                  <img
+                    src="images/possible-3.png"
+                    class="w-12 group-hover:scale-125 transition-all"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h4 class="text-subtitel">
+                      Natural Language Processing (NLP)
+                    </h4>
+                    <p class="text-Slidegray text-card">
+                      By utilizing advanced NLP techniques powered by LLMs, we
+                      enhance customer interactions and streamline
+                      communication. From automated responses to sentiment
+                      analysis, our NLP solutions help you understand and engage
+                      with customers more effectively, delivering tailored
+                      experiences.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="md:mt-4">
-              <div
-                onclick="toggleSection(this)"
-                class="cursor-pointer flex justify-between items-center md:mx-20 mx-4"
-              >
-                <h4 class="md:text-[25px] text-xl">
-                  Automation Strategy and Consulting
-                </h4>
-                <img src="images/arrow-down.svg" class="md:w-12 w-10" alt="" />
-              </div>
-              <div
-                class="bg-white mx-4 py-6 md:mx-20 md:py-8 justify-center md:rounded-4xl rounded-xl body hidden"
-              >
-                <div
-                  class="text-black md:text-2xl md:px-8 px-4 text-lg leading-snug"
-                >
-                  <h4 class="mb-6 text-Slidegray">
-                    Ensure Reliability - Enhance Performance - Maximize Value
-                  </h4>
-                  <p>
-                    We collaborate with you to design a comprehensive automation
-                    strategy that aligns with your business goals. Our
-                    consulting services identify opportunities for automation,
-                    helping you prioritize initiatives that yield the highest
-                    impact.
-                  </p>
+                <div class="bg-[#F2F4F7] rounded-2xl p-5 group card shadow-xl">
+                  <img
+                    src="images/possible-2.png"
+                    class="w-12 group-hover:scale-125 transition-all"
+                    alt=""
+                  />
+                  <div class="mt-4">
+                    <h4 class="text-subtitel">
+                      Automation Strategy and Consulting
+                    </h4>
+                    <p class="text-Slidegray text-card">
+                      We collaborate with you to design a comprehensive
+                      automation strategy that aligns with your business goals.
+                      Our consulting services identify opportunities for
+                      automation, helping you prioritize initiatives that yield
+                      the highest impact.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <feature-work-section></feature-work-section>
+      <!-- OUR PROCESS -->
+      <div class="bg-[#05070F] w-full md:mt-16 mt-5">
+        <div
+          class="flex items-center md:justify-between gap-2 md:gap-0 md:mx-6 mx-2 py-4"
+        >
+          <h4 class="text-white hero-titel">
+            Our <br />
+            Process
+          </h4>
+
+          <div class="">
+            <img
+              src="images/our-process.png"
+              class="h-44 md:h-52 lg:h-62 2xl:h-72 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Success Stories -->
+      <div class="mx-4 md:mt-16 mt-5">
+        <success-stories />
+      </div>
+      <!-- FIXED NAV -->
+      <techno-boost-fixed-nav></techno-boost-fixed-nav>
     </div>
     <div
       class="bg-custom text-white md:py-10 py-2 flex flex-col items-center justify-center"
