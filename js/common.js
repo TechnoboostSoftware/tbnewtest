@@ -466,3 +466,56 @@ function toggleSection(elem) {
 
 //   $img.toggleClass("rotate-180");
 // }
+
+class SuccessStories extends HTMLElement {
+  constructor() {
+    super();
+
+    this.innerHTML = `
+     <div
+          class="bg-white md:px-8 px-4 py-2 md:py-8 md:rounded-3xl rounded-lg"
+        >
+          <div>
+            <h4 class="text-titel text-center mb-1">Success Stories</h4>
+            <p class="text-center max-w-5xl mx-auto">
+              We deliver innovative technology solutions that transform
+              businesses. Our expertise creates measurable impact through
+              excellence and responsive partnership.
+            </p>
+            <div class="mt-10">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+                <div>
+                  <a href="transforming-pharma-new.html">
+                    <img
+                      src="images/pharma-new.png"
+                      class="cursor-pointer hover:scale-110 transition-all"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="transforming-jewelry-new.html">
+                    <img
+                      src="images/jewelry-new.png"
+                      class="cursor-pointer hover:scale-110 transition-all"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href="transforming-pharma-new.html">
+                    <img
+                      src="images/pharma-new.png"
+                      class="cursor-pointer hover:scale-110 transition-all"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    `;
+  }
+}
+customElements.define("success-stories", SuccessStories);
